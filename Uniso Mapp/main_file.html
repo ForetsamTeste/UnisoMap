@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniso Mapp</title>
+  <!-- Santiago - Icone ao lado do titulo do site -->
+  <!--Style-->
+  <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="main_styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+</head>
+<body>
+<!--Schuab - Header(Início)-->
+  <header>
+    <nav class="nav_bar">
+      <div class="nav_list">        
+        <ul>
+          <div class="logo nav_item">
+            <a href="main_file.html" id="logo">
+              <img src="assets/images/logo.svg" alt="logo">
+            </a> 
+          </div>
+          <!-- onclick="changeImage": Ao clicar no menu essa função permite a troca de 
+          imagens através do pathing pelo id, qual é chamado no js. Ex: Clicando no apoio 
+          2, essa função chamará a imagem do apoio 2, conforme o banco de dados no JS-->
+          <li class="nav_item" id="link_biblioteca">
+            <a href="assets/links/biblioteca.html" class="h1">Biblioteca</a>
+          </li>
+          <li class="nav_item">
+            <a href="assets/links/saa.html" class="h1">SAA</a>
+          </li>
+          <li class="nav_item">
+            <a class="h1">Blocos</a>
+            <!-- classe dropdown é escondida no css e mostrada 
+            apenas ao dar hover em alguma classe "nav_item" -->
+            <ul class="dropdown">
+              <li><a href="assets/links/blocoa.html" class="nav_link">Bloco A</a>
+              </li>
+              <li><a href="assets/links/blocob.html" class="nav_link">Bloco B</a>
+              </li>
+              <li><a href="assets/links/blococ.html" class="nav_link">Bloco C</a>
+              </li>
+              <li><a href="assets/links/blocod.html" class="nav_link">Bloco D</a>
+              </li>
+              <li><a href="assets/links/blocoe.html" class="nav_link">Bloco E</a>
+              </li>
+              <li><a href="assets/links/blocof.html" class="nav_link">Bloco F</a>
+              </li>
+            </ul>    
+          </li>
+          <li class="nav_item">
+            <a class="h1">Apoios</a>
+            <ul class="dropdown">
+              <li><a href="assets/links/apoio1.html" class="nav_link">Apoios 1</a>
+              </li>
+              <li><a href="assets/links/apoio2.html" class="nav_link">Apoios 2</a>
+              </li>
+              <li><a href="assets/links/apoio3.html" class="nav_link">Apoios 3</a>
+              </li>
+              <li><a href="assets/links/apoio4.html" class="nav_link">Apoios 4</a>
+              </li>
+            </ul>     
+          </li>
+          <li class="nav_item">
+            <a class="h1">Extras</a>
+            <ul class="dropdown">
+              <li><a href="assets/links/quadras.html" class="nav_link">Quadras</a>
+              </li>
+              <li><a href="assets/links/estacionamento.html" class="nav_link">Estacionamentos</a>
+              </li>
+              <li><a href="assets/links/lapec.html" class="nav_link">Lapec</a></li>
+              <li><a href="assets/links/casasdeapoio.html" class="nav_link">Casas de Apoio</a>
+              </li>
+            </ul>            
+          </li>
+          <li class="nav_item">
+            <a href="assets/links/documentacao.html" class="h1">Documentação</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!--Schuab - Hero Section(Início)-->
+  <div class="main_content">
+    <div id="map"></div>
+  </div>
+<!--Schuab - Hero Section(Fim)-->
+<!--Santiago - Footer(Início)-->
+  <footer class="footer_area">
+    <div class="footer_top">
+      <div class="footer_background">
+          <div class="footer_background_one"></div>
+          <div class="footer_background_two"></div>
+      </div>  
+      <div>
+        <div>
+          <div>
+            <p>Desenho dos mapas por <a href="https://www.instagram.com/luis.hfa/" 
+              target="_blank">Luis Henrique Fragoso Almeida</a></p>
+          </div>
+          <div>
+            <p>© Alunos Eng da computação 2º semestre. 2023 All rights reserved.</p>
+            <p>© 2010-2023 Volodymyr Agafonkin. Maps © OpenStreetMap contributors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--Santiago - Footer(Fim)-->
+<!--Schuab - Scripts-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<script src="main_script.js" defer></script>
+</body>
+</html>
